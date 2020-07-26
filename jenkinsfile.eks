@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+    lable 'SSH-Agent'
+    }
     tools { 
         maven 'mvn'
 	java 'jdk'
